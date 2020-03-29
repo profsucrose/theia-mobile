@@ -6,6 +6,8 @@ const HomeScreen = ({ navigation }) => {
         <View>
             <Text style={styles.text}>Theia</Text>
 			<Button title="Todo List" onPress={() => navigation.navigate('Todo')} />
+			<Button title="Meal Planner" onPress={() => navigation.navigate('MealPlanner')} />
+			<Button title="Sleep Scheduler" onPress={() => navigation.navigate('SleepScheduler')} />
         </View>
     )
 }
