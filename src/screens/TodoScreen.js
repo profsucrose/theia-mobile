@@ -7,8 +7,10 @@ const TodoScreen = ({ navigation }) => {
     return (
         <View>
             <Text style={styles.text}>Todo List</Text>
-			<TextInput 
-				onSubmitEditing={() => setTodoList([...todoList, "Task"])}
+			<Button 
+				title="Add Task"
+				keyExtractor={(index) => index}
+				onPress={() => setTodoList([...todoList, "Task"])}
 			/>
 			<FlatList 
 				data={todoList}
