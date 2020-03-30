@@ -19,7 +19,6 @@ const TodoList = ({ todos, setTodoList }) => {
 					/>
 					: <Text style={{...styles.item, width: 300}}>Nice job, you finished everything!</Text>}
 			</View>
-			<TextInput placeholder="New Task" style={styles.search} />
 		</View>
 		
 	)

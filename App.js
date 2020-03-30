@@ -7,6 +7,7 @@ import ExerciseScreen from './src/screens/ExerciseScreen'
 import MeditationScreen from './src/screens/MeditationScreen'
 import FoodLogScreen from './src/screens/FoodLogScreen'
 import MusicScreen from './src/screens/MusicScreen'
+import FoodLogDetailsScreen from './src/screens/FoodDetailScreen'
 
 import YogaScreen from './src/screens/exerciseScreens/YogaScreen'
 import CardioScreen from './src/screens/exerciseScreens/CardioScreen'
@@ -23,10 +24,11 @@ const App = () => {
 				<Stack.Screen name="Exercise" component={ExerciseScreen} />
 				<Stack.Screen name="Meditation" component={MeditationScreen} />
 				<Stack.Screen name="Music" component={MusicScreen} />
+				<Stack.Screen name="Food Details" component={FoodLogDetailsScreen} />
 				{ /* Exercise screens */ }
 				<Stack.Screen name="Yoga" component={YogaScreen} />
 				<Stack.Screen name="Cardio" component={CardioScreen} />
-				<Stack.Screen name="FoodLog" component={FoodLogScreen} />
+				<Stack.Screen name="Food Log" component={FoodLogScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

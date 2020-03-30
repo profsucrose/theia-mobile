@@ -1,27 +1,40 @@
 import React, { useState } from 'react'
-import { Text, StyleSheet, View, Button, Image, SafeAreaView } from 'react-native'
+import { Text, TouchableOpacity, StyleSheet, View, Button, Image, SafeAreaView } from 'react-native'
 import HomeSelect from '../components/HomeSelect'
 import TodoList from '../components/TodoList'
 import { LinearGradient } from 'expo-linear-gradient'
 
+import { Ionicons } from '@expo/vector-icons'
+
 const MusicScreen = () => {
+	console.log('loaded ')
+	const [paused, setPaused] = useState(true)
+ 
     return (
 		<View>
-			<LinearGradient
-				colors={['#9B51E0', '#BB6BD9', 'white']}
-				style={{ height: '140%', width: '100%' }}>
-					<Image source={require('../../assets/icons/music.png')} style={styles.musicNotes} />
-					<Image source={require('../../assets/icons/clouds.png')} style={styles.cloud} />
-					<Text style={styles.title}>Music</Text>
-					<View>
-						<Text style={styles.header}>Last Played</Text>
-					</View>
-			</LinearGradient>
+			<Image style={{ width: '100%', height: '102%', marginTop: -1 }} source={require('../../assets/musicScreen.png')} />
+			<TouchableOpacity style={{ position: 'absolute' }} onPress={() => { console.log(paused); setPaused(false)}}>
+				<Image source={require('../../assets/play.png')} style={{...styles.playButton, display: paused ? 'flex' : 'none'}} />
+				<Image source={require('../../assets/pause.png')} style={{...styles.playButton, display: !paused ? 'flex' : 'none'}} />
+			</TouchableOpacity>
+			
       	</View>
     )
 }
 
 const styles = StyleSheet.create({
+	pauseButton: {
+		width: 50,
+		height: 50,
+		left: 163,
+		top: 578,
+		position: 'absolute'
+	},
+	playButton: {
+		left: 168,
+		top: 575,
+		position: 'absolute'
+	},
 	title: {
 		fontSize: 60,
 		fontFamily: 'AvenirNext-DemiBold',
