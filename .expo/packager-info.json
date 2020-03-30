@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19003,
-  "expoServerPort": 19004,
-  "packagerPort": 19005,
-  "packagerPid": 70104,
-  "expoServerNgrokUrl": "https://cm-uku.anonymous.theia.exp.direct",
-  "packagerNgrokUrl": "https://packager.cm-uku.anonymous.theia.exp.direct",
-  "ngrokPid": 70117
+  "devToolsPort": 19007,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

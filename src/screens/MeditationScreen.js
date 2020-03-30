@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { Text, StyleSheet, View, Button } from 'react-native'
 
-const FoodLogScreen = () => {
+const MeditationScreen = () => {
     return (
         <View>
-            <Text>Food Log</Text>
+            <Text>Meditation</Text>
 		</View>
     )
 }
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default FoodLogScreen
+export default MeditationScreen
